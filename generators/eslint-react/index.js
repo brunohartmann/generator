@@ -38,4 +38,8 @@ module.exports = class extends Generator {
   editorconfig() {
     this.fs.copy(this.templatePath('.editorconfig'), this.destinationPath('.editorconfig'));
   }
+
+  prettier() {
+    this.fs.copy(this.templatePath('.prettierrc'), this.destinationPath('.prettierrc'));
+  }
 };
